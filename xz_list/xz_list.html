@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./cssReset.css">
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Microsoft YaHei, Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
+        line-height: 1.4;
+      }
+    .menu-part {
+      width: 1200px;
+      height: 440px;
+      border-radius: 10px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      font-size: 15px;
+      color: #999;
+      box-shadow: 0 0 24px 0 #ccc;
+    }
+    .list {
+      width: 829px;
+      height: 440px;
+      background-color: #f6f6f8;
+      position: absolute;
+      top: 0;
+      left: 225px;
+      display: none;
+    }
+    .menuUl>ul {
+      width: 225px;
+    }
+    .menuUl li {
+      /* display: block; */
+      float: left;
+      width: 165px;
+      padding: 10px 30px;
+      border-bottom: 1px solid #1c252d;
+      background-color: #292d32;
+      text-align: center;
+      line-height: 42px;
+    }
+    .menuUl>ul>li:hover {
+      background-color: #f6f6f8;
+      color: #1a1a1a;
+      cursor: pointer;
+    }
+    .menuUl>ul>li:hover>div {
+      display: block;
+    }
+    .list1 {
+      width: 789px;
+      height: 261px;
+      background: #fff;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+    .list2 {
+      width: 829px;
+      height: 152px;
+      background: #fff;
+    }
+    .listTr-1 {
+      width: 789px;
+      height: 86px;
+      padding-bottom: 1px;
+      border-bottom: 1px solid #eae9e9;
+    }
+    .listTr-2 {
+      width: 789px;
+      height: 87px;
+      /* margin-bottom: 10px; */
+    }
+    /* 各类a标签属性 */
+    .menu-part .listTd1 a {
+      color: #1a1a1a;
+    }
+    .menu-part .listTd2 a {
+      color: #999;
+      margin: 0 15px;
+    }
+    /* 上半部分 */
+    .menu-part .listTd1 {
+      width: 108px;
+      border-radius: 14px;
+      margin: 28px 0;
+      background: #eee;
+      color: #1a1a1a;
+      text-align: center;
+      line-height: 28px;
+    }
+    .menu-part .listTd2 {
+      padding: 17px 0;
+    }
+    .menu-part .listTd2 a {
+      float: left;
+      height: 52px;
+      line-height: 52px;
+    }
+    /* 下半部分 */
+    .menu-part .listAd {
+      color: #999;
+    }
+    .listTr-3 img {
+      display: block;
+      width: 120px;
+      border-radius: 5px;
+    }
+    .listTr-3 h3 {
+      font-size: 100%;
+      color: #1a1a1a;
+    }
+    .listTr-3 h3,.listTr-3 p {
+      width: 230px;
+      height: 21px;
+      line-height: 21px;
+      text-align: left;
+      overflow: hidden;
+    }
+    .listTr-3 div {
+      padding-top: 39px;
+      padding-left: 28px;
+    }
+    .listTr-1>div,.listTr-2>div,.listTr-3 div {
+      float: left;
+    }
+    .menuUl li {
+      position: relative;
+    }
+    .menuUl li span {
+      position: absolute;
+      top: 9px;
+      left: 190px;
+    }
+    </style>
+</head>
+
+<body>
+  <!-- 字体：灰色#999,黑色#1a1a1a -->
+  <!-- 背景：黑色#292d32,灰色#eee,白色#f6f6f8 -->
+  <!-- 下边框：#1c252d -->
+  <!-- 菜单 -->
+  <div class="menu-part clearfix">
+      <div class="menuUl">
+        <ul>
+          <!-- 前端/后端开发 -->
+          <li>
+            <a>前端/后端开发<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">前端开发</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">Web前端</a>
+                  </div>
+                </div>
+                <div class="listTr-2 clearfix">
+                  <div class="listTd1">
+                    <a href="#">后端开发</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">Java</a>
+                    <a href="#">Python</a>
+                    <a href="#">JAVA培优</a>
+                    <a href="#">Go语言与区块链</a>
+                    <a href="#">C#/.Net</a>
+                    <a href="#">C/C++</a>
+                    <a href="#">PHP</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///c079cd3ec3154c62916dc864095ef0ae.jpg" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>Java高手加薪课程</h3>
+                      <p>达内重磅推出的JAVA高手加薪课，涵盖爆款的主流技术与更深的技术原理，助力程序员快速进阶架构师！</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///40d6f6da36cf497586b29f3d9069f2fa.jpg" alt="">
+                    </div>
+                    <div>
+                      <h3>Java软件架构课</h3>
+                      <p>由传统架构师迈向互联网架构师！</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 大数据/云计算 -->
+          <li>
+            <a>大数据/云计算<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">大数据</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">大数据</a>
+                  </div>
+                </div>
+                <div class="listTr-2 clearfix">
+                  <div class="listTd1">
+                    <a href="#">云计算</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">linux云计算</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///5302df23e4ec4fc88216f2127c438c3b.jpg" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>大数据+实战高薪课</h3>
+                      <p>达内在线大数据培优课</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///b96d40ef6562489882fbd7dac9394335.jpg" alt="">
+                    </div>
+                    <div>
+                      <h3>Linux云计算系列实战训练营2.0</h3>
+                      <p>专为培养新一代“Linux运维/Python开发”工程师而开设。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 移动开发/游戏 -->
+          <li>
+            <a>移动开发/游戏<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">移动开发</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">小程序</a>
+                    <a href="#">Android</a>
+                    <a href="#">iOS</a>
+                  </div>
+                </div>
+                <div class="listTr-2 clearfix">
+                  <div class="listTd1">
+                    <a href="#">游戏</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">Unity3D</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///486CFA775C7244D49E6E0D550C31A6E8.png" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>Unity3D入门之脚本开发</h3>
+                      <p>Unity3D入门之脚本开发</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///69980B7CC2634E61870DFE605C3A6C85.png" alt="">
+                    </div>
+                    <div>
+                      <h3>Android之网络通信</h3>
+                      <p>Android之网络通信</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 物联网/测试 -->
+          <li>
+            <a>物联网/测试<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">物联网</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">嵌入式</a>
+                  </div>
+                </div>
+                <div class="listTr-2 clearfix">
+                  <div class="listTd1">
+                    <a href="#">软件测试</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">软件测试</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/tmooc-web/imgad/2018/6/4//AF73F4970A64405295A768B17AE58F04.png" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>嵌入式之开发实战</h3>
+                      <p>开发实战</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///EE0DE5C881684542B3D0875CF97CAA5D.png" alt="">
+                    </div>
+                    <div>
+                      <h3>设计测试用例的方法</h3>
+                      <p>设计测试用例的方法</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 营销/产品/运营 -->
+          <li>
+            <a>营销/产品/运营<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">营销</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">网络营销</a>
+                    <a href="#">信息流</a>
+                  </div>
+                </div>
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">产品</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">产品经理</a>
+                  </div>
+                </div>
+                <div class="listTr-2 clearfix">
+                  <div class="listTd1">
+                    <a href="#">运营</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">新媒体运营</a>
+                    <a href="#">高级电商</a>
+                    <a href="#">网商运营</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///37FACE09F5404EDA95E9D0F4D76668D0.png" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>一周上手小程序</h3>
+                      <p>本系列课程抓住了小程序开发的要点，带你快速进行知识梳理和案例实操</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///CC18466FADF74D3A87FDA5A17AAF4D83.png" alt="">
+                    </div>
+                    <div>
+                      <h3>SEM搜索引擎营销</h3>
+                      <p>SEM搜索引擎营销</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 数字艺术 -->
+          <li>
+            <a>数字艺术<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">数字艺术</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">UED设计</a>
+                    <a href="#">UID设计</a>
+                    <a href="#">BVD商业视觉设计</a>
+                    <a href="#">CAD</a>
+                    <a href="#">视频剪辑</a>
+                    <a href="#">平面设计</a>
+                    <a href="#">商业插画</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//courseImg///A39738762E2741B2892D358B5C6500C1.jpg" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>达内在线商业插画培优课</h3>
+                      <p>专为UI设计师打造，提升原创设计实力，突破设计瓶颈，创造设计灵感，实现设计实力的飞跃！</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///a91007b4195a4a4dba2cc6136bb992db.jpg" alt="">
+                    </div>
+                    <div>
+                      <h3>平面设计极速入职课</h3>
+                      <p>0基础设计小白快速具备入职能力</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 其他职业课程 -->
+          <li>
+            <a>其他职业课程<span>></span></a>
+            <div class="list">
+              <div class="list1">
+                <div class="listTr-1 clearfix">
+                  <div class="listTd1">
+                    <a href="#">其他职业课程</a>
+                  </div>
+                  <div class="listTd2">
+                    <a href="#">网络运维与安全</a>
+                    <a href="#">ACC</a>
+                    <a href="#">HR</a>
+                    <a href="#">就业指导</a>
+                    <a href="#">商业办公软件</a>
+                  </div>
+                </div>
+              </div>
+              <div class="list2">
+                <div class="listTr-3 clearfix">
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///4d09a706a83741f8b9f303196af69862.jpg" alt="">
+                    </div>
+                    <div class="word">
+                      <h3>华为高级认证HCIE</h3>
+                      <p>提升7大实力，做ICT领域专家</p>
+                    </div>
+                  </a>
+                  <a href="#" class="listAd">
+                    <div>
+                      <img src="https://cdn.tmooc.cn/bsfile//imgad///01535b1f83684f27a2725ffbbdfe06d6.jpg" alt="">
+                    </div>
+                    <div>
+                      <h3>总账会计180天实战训练营</h3>
+                      <p>上市公司，真账实训，打造会计实战派。</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+</body>
+
+</html>
